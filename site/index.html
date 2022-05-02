@@ -9,7 +9,7 @@
         <style>
             h1 {
                 color:blue;
-                font-size: 36px;
+                font-size: 50px;
                 text-align: center;
             }
             p {
@@ -17,15 +17,120 @@
                 font-size: 20px;
                 text-align: center;
             }
+            div, .blue {
+                color: green;
+                font-size: 25px;
+                text-align: center;
+
+            }
+            #desc {
+                color: blue;
+                font-size: 25px;
+                font-family: 'Franklin Gothic Medium';
+            }
+            p.#desc {
+                font-style: italic;
+            }
+            article>p {
+                color:yellow;
+            }
+            article p {
+                color: orange;
+            }
+            section>h2 {
+                color:black;
+                text-align: center;
+                font-size: 50px;
+                font-family: 'Segoe UI';
+            }
+        header li {
+            list-style: none;
+                text-align: center;
+                color: blue;
+                font-size: 30px;
+            }
+            a:link {
+                background-color: black;
+                border: 1px solid blue;
+                display: block;
+                text-align: center;
+                margin-bottom: 1px;
+            
+            }
+            a:hover {
+                background-color: brown;
+                color: aqua;
+            }
+            header li:nth-child(5)
+            {
+                font-size: 40px;
+            }
         </style>
     </Head>
     <body>
         <h1>
-            My Own Web Development Basics
+            My Own Web Development Basics!
 
         </h1>
         <p>
             I have started web development at my twenties.
         </p>
+        <p class="blue"> 
+            This is my first website that I am tryna build
+<section>
+        </p>
+         <p id="desc">
+    I just learnt how to use selectors like class and id selector. These selectors target a specific tag on yout html and
+    give them some attribute like color, font or whatever you want which have a predetermined value
+</p>
+<div> We can use the selectors seperated by comma in the stylesheet to use them simultaneously
+<p id="desc"> This p element got italics coz i used p.desc in stylesheet. Other p elements didnt got italics</p>
+</div>
+<div id="desc"> This div element didnt got italic coz there was no div.desc in the stylesheeet but the previous p got italics 
+    coz i used p.desc 
+</div>
+        <article>
+            <p>
+                This p element is direct child of article element and got the color yellow. We used child selector syntax here
+            </p>
+        </article>    
+
+        <article>
+            <div>
+                <p>
+                    this p element resides within the div element i.e. it is not the direct child of article.
+                </p>
+            </div>
+        </article>
+        <article>
+            <div>
+                <p>
+                    This element is not a direct child of article. Still it got the color orange coz we used descendent selector syntax
+                </p>
+            </div>
+        </article>
+
+
+</section>
+
+
+<section>
+        <h2>
+            PseudoClass Selectors 
+        </h2>
+        <header>
+            <ul>
+                <li><a href="http://www.google.com">Link</a> </li>
+                <li>visited</li>
+                <li>hover</li>
+                <li>active</li>
+                <li>nth-child</li>              
+            </ul>
+
+        </header>
+</section>
+<section>
+
+</section>
     </body>
 </html>
